@@ -23,7 +23,7 @@ jobs:
         key: ${{ secrets.PRIVATE_KEY }}
         port: 22
         script: |
-      cd /home/user/apps/farAlpha challange  # Change this to the actual deployment directory on the remote server
+          cd farAlpha-challange
           git pull origin main
           git status
           npm install --only=prod
