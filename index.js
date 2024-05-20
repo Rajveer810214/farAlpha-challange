@@ -9,6 +9,10 @@ app.use(cors());
 app.get('/sayHello', (req, res) => {
   res.status(200).json({ message: "Hello User" });
 });
+app.get('/say', (req, res) => {
+  res.status(200).json({ message: "Hello world" });
+});
+
 
 // Start the server
 app.listen(port, () => {
